@@ -1,0 +1,25 @@
+✅ REAL News (Label: REAL)
+
+“Malaysia to launch Southeast Asia’s first hydrogen-powered bus system in 2025.”
+
+“NASA confirms discovery of water on sunlit surface of the Moon.”
+
+“Bank Negara Malaysia raises interest rates to combat inflation pressures.”
+
+“UTM researchers develop biodegradable plastic alternative from palm oil waste.”
+
+“Apple unveils new MacBook with M3 chip, promising 30% performance boost.”
+
+❌ FAKE News (Label: FAKE)
+
+“Scientists accidentally create talking bananas during fruit gene experiment.”
+
+“Aliens to participate in 2025 Tokyo Olympics, says UN in secret report.”
+
+“World Health Organization declares coffee as official COVID-19 cure.”
+
+“Time travel tourism approved by government starting next year.”
+
+“Lizard man spotted managing McDonald’s drive-thru in Kuala Lumpur.”
+
+These are a fun mix to test your app and see clear differences in tone and realism.

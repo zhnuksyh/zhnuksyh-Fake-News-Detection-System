@@ -1,0 +1,12 @@
+FUNCTION predict_news(news_text):
+
+  LOAD saved model from 'model.pkl'
+  LOAD saved vectorizer from 'vectorizer.pkl'
+
+  TRANSFORM 'news_text' using vectorizer → news_vec
+
+  PREDICT result using model → label
+
+  RETURN label (FAKE or REAL)
+
+END FUNCTION

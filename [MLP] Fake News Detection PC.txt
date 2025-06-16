@@ -1,0 +1,35 @@
+BEGIN
+
+  // Step 1: Load Dataset
+  LOAD CSV file as 'df'
+  SELECT only 2000 rows to reduce size
+  FILL any missing text data with empty string
+
+  // Step 2: Preprocessing
+  EXTRACT column 'text' as input X
+  EXTRACT column 'label' as output y
+
+  // Step 3: Feature Extraction
+  INITIALIZE TF-IDF Vectorizer with max_features = 3000
+  FIT and TRANSFORM 'X' into vectorized form → X_vec
+
+  // Step 4: Train/Test Split
+  SPLIT X_vec and y into training and testing sets (80/20 ratio)
+
+  // Step 5: Model Training
+  INITIALIZE MLP Classifier with:
+    hidden_layer_sizes = (100,)
+    max_iter = 100
+    random_state = 1
+  TRAIN model using training set
+
+  // Step 6: Evaluation
+  PREDICT y_pred from X_test
+  CALCULATE accuracy by comparing y_test and y_pred
+  PRINT accuracy
+
+  // Step 7: Save Model
+  SAVE trained model to 'model.pkl'
+  SAVE TF-IDF vectorizer to 'vectorizer.pkl'
+
+END
