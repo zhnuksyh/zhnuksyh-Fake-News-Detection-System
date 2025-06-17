@@ -20,7 +20,7 @@ real_df = real_df[['text', 'label']]
 # 5. Merge, shuffle, limit to 2000 rows
 df = pd.concat([fake_df, real_df], ignore_index=True)
 df = df.sample(frac=1, random_state=42).reset_index(drop=True)
-df = df[:4000]  # lightweight!
+df = df[:7000]  # lightweight!
 
 # 6. Save
 df.to_csv('dataset.csv', index=False)

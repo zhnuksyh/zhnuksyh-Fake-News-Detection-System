@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score
 import joblib
 
 # Load and prepare dataset
-df = pd.read_csv("dataset.csv")[:2000]  # small dataset for speed
+df = pd.read_csv("dataset.csv")[:4000]  # small dataset for speed
 X = df["text"]
 y = df["label"]
 

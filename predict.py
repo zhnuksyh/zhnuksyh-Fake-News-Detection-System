@@ -9,7 +9,7 @@ vectorizer = joblib.load('vectorizer.pkl')
 df = pd.read_csv('dataset.csv')  # this contains 'text' and 'label'
 
 # OPTIONAL: Just take a small chunk if you want lightweight
-df = df.sample(30, random_state=42)  # randomly choose 10 samples for prediction
+df = df.sample(300, random_state=42)  # randomly choose 10 samples for prediction
 
 # Transform the text using the vectorizer
 X = vectorizer.transform(df['text'])
